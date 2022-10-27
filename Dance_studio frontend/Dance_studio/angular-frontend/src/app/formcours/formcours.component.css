@@ -1,0 +1,47 @@
+.container {
+    
+    
+    display: flex;
+    justify-content: center;
+    height:  750px ;
+    width: 700px;
+
+    }
+    .signup{
+       /* background-color:rgb(205, 205, 205);*/
+    }
+
+    body{
+        background-image: url('../../assets/img/dance9.jpg');
+        background-size:100%;
+       
+    }
+
+
+    legend {
+        font-size: 2.5em;
+        padding: 0.1em;
+        color: #45046A;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }   
+
+        fieldset {
+            margin: 2em 0;
+            padding: 1em 2em;
+            border:solid  1px #ccc;
+            border-radius: 6px;
+            min-width: 200px;
+        }
+
+        .float-right btn btn-primary{
+            color:rgb(173, 27, 27);
+        }
+        .btn{
+           background-color: #A35D6A; 
+        }
+    
+        label{
+            color:blanchedalmond
+        }
+        

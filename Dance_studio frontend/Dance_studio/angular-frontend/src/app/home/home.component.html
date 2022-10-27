@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<!--
+<body>
+
+  
+  <div class="section section-buttons">
+    <div class="container">
+        <div class="tim-title">
+            <h2>Basic Components</h2>
+        </div>
+        <div id="buttons">
+            <div class="tim-title">
+                <h3>Buttons
+                    <br/>
+                    <small>Pick your style</small>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <button type="button" class="btn btn-danger">Default</button>
+                    <button type="button" class="btn btn-danger btn-round">Round</button>
+                    <button type="button" class="btn btn-danger btn-round"><i class="fa fa-heart"></i> With Icon</button>
+                    <button type="button" class="btn btn-danger btn-just-icon"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-danger btn-link">Simple</button>
+                </div>
+            </div>
+            <div class="tim-title">
+                <h3><small>Pick your size</small></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <button type="button" class="btn btn-outline-danger btn-sm">Small</button>
+                    <button type="button" class="btn btn-outline-danger">Regular</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg">Large</button>
+                </div>
+            </div>
+            <div class="tim-title">
+                <h3><small>Pick your color</small></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <button type="button" class="btn btn-outline-default btn-round">Default</button><button type="button" class="btn btn-outline-primary btn-round">Primary</button>
+                    <button type="button" class="btn btn-outline-info btn-round">Info</button>
+                    <button type="button" class="btn btn-outline-success btn-round">Success</button>
+                    <button type="button" class="btn btn-outline-warning btn-round">Warning</button>
+                    <button type="button" class="btn btn-outline-danger btn-round">Danger</button>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-8">
+                    <button type="button" class="btn btn-default btn-round">Default</button>
+                    <button type="button" class="btn btn-primary btn-round">Primary</button>
+                    <button type="button" class="btn btn-info btn-round">Info</button>
+                    <button type="button" class="btn btn-success btn-round">Success</button>
+                    <button type="button" class="btn btn-warning btn-round">Warning</button>
+                    <button type="button" class="btn btn-danger btn-round">Danger</button>
+                </div>
+            </div>
+        </div>
+            <br/>
+        <div class="tim-title">
+            <h3>Links</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <a href="#0" class="btn btn-link btn-default">Default</a>
+                <a href="#0" class="btn btn-link btn-primary">Primary</a>
+                <a href="#0" class="btn btn-link btn-success">Success</a>
+                <a href="#0" class="btn btn-link btn-info">Info</a>
+                <a href="#0" class="btn btn-link btn-warning">Warning</a>
+                <a href="#0" class="btn btn-link btn-danger">Danger</a>
+                <a href="#0" class="btn btn-link btn-neutral">Neutral</a>
+            </div>
+        </div>
+        <br/>
+        <div class="tim-title">
+            <h3>Inputs</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group has-success">
+                    <input type="text" class="form-control form-control-success" id="inputSuccess1" value="Success">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group has-danger">
+                    <input type="text" class="form-control form-control-danger" id="inputDanger1" value="Error">
+                    <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" (focus)="focus=true" (blur)="focus=false" >
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-group" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="tim-title">
+                    <h3>Checkboxes</h3>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Unchecked
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" checked="">
+                    Checked
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" disabled="">
+                    Disabled unchecked
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" checked="" disabled="">
+                    Disabled checked
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="tim-title">
+                    <h3>Radio Buttons</h3>
+                </div>
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                    Radio is off
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check-radio">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">
+                    Radio is on
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check-radio disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3" disabled="">
+                    Disabled Radio is off
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class="form-check-radio disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" checked disabled="">
+                    Disabled Radio is on
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+            </div>
+          -<div class="col-sm-6 col-lg-3">
+                <div class="tim-title">
+                    <h3>Toggle Buttons</h3>
+                </div>
+                <bSwitch
+                    [switch-on-color]="'primary'">
+                </bSwitch>
+                <bSwitch
+                    [switch-on-color]="'primary'"
+                    [(ngModel)]="state_default"> Toggle is off
+                </bSwitch>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="tim-title">
+                    <h3>Sliders</h3>
+                </div>
+                <nouislider [connect]="false" [min]="0" [max]="100" [step]="1" [(ngModel)]="simpleSlider" [tooltips]="false" class="slider"></nouislider>
+                <br>
+                <nouislider class="slider slider-info" [connect]="true" [min]="0" [max]="100" [step]="1" [(ngModel)]="doubleSlider" [tooltips]="false"></nouislider>
+            </div>
+   </div>
+    </div>
+</div> -->
+<!--
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="">e-education</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="course">Course</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="joinnow">Joinnow</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section class="home">
+<img src="/angular-frontend/src/assets/img/danceSymbole.png">
+  
+<div class="homecontent">
+  <h1>Start Learning For  Future bright</h1>
+
+
+  <button (click)="gotosignup()">s'inscrire</button>
+  <button (click)="gotologin()">se connecter</button>
+</div>
+</section>
+<div class="row">
+  <div class="col-sm-6 col-lg-3">
+      <div class="tim-title">
+          <h3>Checkboxes</h3>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="">
+          Unchecked
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked="">
+          Checked
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" disabled="">
+          Disabled unchecked
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked="" disabled="">
+          Disabled checked
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+      <div class="tim-title">
+          <h3>Radio Buttons</h3>
+      </div>
+      <div class="form-check-radio">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+          Radio is off
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check-radio">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">
+          Radio is on
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check-radio disabled">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3" disabled="">
+          Disabled Radio is off
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+      <div class="form-check-radio disabled">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option3" checked disabled="">
+          Disabled Radio is on
+          <span class="form-check-sign"></span>
+        </label>
+      </div>
+  </div>
+</div>
+
+</body>-->
+<div class="banner">
+  <div class="content">
+      <h1 class="mb-5">Move to the rythm</h1>
+      <a routerLink="signup">Get started <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <h1 class="text-center">Look at <span class="highlight">our catalog</span></h1>
+  <div class="row mt-5">
+      <!-- one  -->
+      <div class="col-lg-4 mt-2">
+          <div class="stepBox">
+              <h1>1</h1>
+              <p>s'inscrire</p>
+          </div>
+      </div>
+
+
+      <div class="col-lg-4 mt-2">
+        <div class="stepBox">
+            <h1 routerLink="catalog">2</h1>
+            <p>see what you like</p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+          <h1 routerLink="v1">3</h1>
+          <p>regarder des tutoriels</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- foodbox  -->
+
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Customers <span class="highlight">Favourites classes</span></h1>
+  <div class="row">
+      <div class="col-lg-3 mt-3" *ngFor="let cd of DanceData;index as i">
+          <div class="foodbox" *ngIf="i<=3">
+              <img src="{{cd.classImg}}" >
+              <h1>{{cd.className}}</h1>
+              <p>{{cd.classPrice }} DT</p>
+         
+          </div>
+      </div>
+  </div>
+  <a routerLink="catalog" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>

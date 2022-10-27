@@ -1,0 +1,25 @@
+<body style="background-color:rgb(255, 252, 248);">
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let cd of DanceData">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{cd.classImg}}">
+                <h1>{{cd.className}}</h1>
+                <p>{{cd.classDetails}}</p>
+                <p>{{cd.classPrice}} DT</p>
+                <br/>
+                <a class="buybtn" 
+                [routerLink]="['/cours']">ajouter &nbsp;<i class="bi bi-file-plus"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+</body>

@@ -1,0 +1,8 @@
+
+<div class="col-lg-4" *ngFor="let cd of videos, index as i">
+    
+    
+<youtube-player [videoId]="cd.id" (ready)="savePlayer($event)" [playerVars]="playerVars"> </youtube-player>
+<div class="name">{{cd.name}}</div>
+    
+</div>

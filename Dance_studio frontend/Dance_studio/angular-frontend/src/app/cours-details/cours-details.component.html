@@ -1,0 +1,42 @@
+<h2>Cours Details</h2> 
+
+<!--<hr/>
+<div *ngIf="cours" class="container">
+  <div class="l1">
+    <label><b>nom</b></label> {{cours.nom_c}}
+  </div>
+  <div class="l1">
+    <label><b>prix </b></label> {{cours.prix_c}}
+  </div>
+  <div class="l1">
+    <label><b>descriptions </b></label> {{cours.desc}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="back()" class="btn btn-primary">retourner a la liste des cours</button><br>-->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="content">
+  <div *ngIf="cours" class="container">
+    <div class="card">
+        <div class="firstinfo"><img src="https://res.cloudinary.com/enicarthage1/image/upload/v1650717054/pexels-heloisa-vecchio-6760183_k4vfzr.jpg" />
+            <div class="profileinfo">
+                <h1>{{cours.nom_c}}</h1>
+                <h3>{{cours.prix_c}} DT</h3>
+                <p class="bio">{{cours.desc}} </p>
+            </div>
+        </div>
+    </div>
+    <div class="badgescard"> 
+        <span class="fa fa-facebook"></span>
+        <span class="fa fa-twitter"> </span>
+        <span class="fa fa-google-plus"></span>
+        <span class="fa fa-youtube"></span>
+        <span class="fa fa-dribble"></span>
+        <span class="fa fa-google"></span>
+        <span class="fa fa-android"> </span>
+    </div>
+  </div>
+</div>

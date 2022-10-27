@@ -1,0 +1,33 @@
+<!--<div *ngFor="let cours of cours">
+<div>{{cours.nom_c}}</div></div>-->
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>cours inscrits</h2>
+    </div>
+    <div class="panel-body">
+      <table class="">
+        <thead>
+          <tr>
+            <th>nom</th>
+            <th>prix</th>
+            <th>descriptions</th>
+            <th>Actions</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cours of cours ">
+            <td>{{cours.nom_c}}</td>
+            <td>{{cours.prix_c}}</td>
+            <td>{{cours.desc}}</td>
+            <td><button mwlConfirmationPopover [popoverTitle]="popoverTitle" [popoverMessage]="popoverMessage" placement="left" (confirm)=" deletecours(cours.code) " (cancel)="cancelClicked=true" class="btn btn-danger">Supprimer</button>
+                <button (click)="coursDetails(cours.code)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+            <td><ngb-rating class="filled" ></ngb-rating></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

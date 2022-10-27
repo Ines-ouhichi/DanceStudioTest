@@ -1,0 +1,43 @@
+.container {
+    
+    
+    display: flex;
+    justify-content: center;
+    height:  750px ;
+
+    }
+    .signup{
+       /* background-color:rgb(205, 205, 205);*/
+    }
+
+    body{
+        background-image: url('../../assets/img/dance5.jpg');
+        background-size:100%;
+       
+    }
+
+
+    legend {
+        font-size: 3em;
+        padding: 0.1em;
+        color:#000000;
+        }   
+
+        fieldset {
+            margin: 2em 0;
+            padding: 1em 2em;
+            border:solid  1px #ccc;
+            border-radius: 6px;
+            min-width: 200px;
+        }
+
+        .float-right btn btn-primary{
+            color:rgb(173, 27, 27);
+        }
+        .btn{
+           background-color: rgb(173, 27, 27); 
+        }
+    .float-right{
+        color:bisque;
+        font-size:medium;
+    }        
